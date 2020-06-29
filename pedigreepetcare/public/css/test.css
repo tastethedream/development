@@ -1,3 +1,67 @@
-h1{
-    color: green;
+header{
+    background:wheat;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: cornflowerblue 3px solid ;
+
 }
+img{
+    border-radius: 50%;
+    margin-left: 25px;
+}
+
+ /* style the <a> links in the header*/
+ header a{
+     color:white;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 16px;
+
+ }
+/* by default ul have padding and margins so set to 0*/
+
+
+ header li{
+     display: inline;
+     padding: 0 20px 0 20px;
+  
+ }
+
+ header #logo{
+     float: left;
+  
+ }
+
+ 
+ 
+
+ header nav{
+     /* float:center; */
+     margin-bottom: 10px;
+ }
+
+  header .current a{
+     color: cornflowerblue;
+     font-weight: bold;
+ }
+
+ header .title{
+    font-family: Montserrat;
+    color: white;
+     font-size: 20px;
+     float:right;
+     margin-right: 60px;
+ }
+
+ 
+ /* hover state */
+
+ header a:hover{
+     color: #cccccc;
+     font-weight: bold;
+ }
+
+ 
+    
+ }
