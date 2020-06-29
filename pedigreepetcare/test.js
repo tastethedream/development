@@ -1,5 +1,3 @@
-//jshint esversion:6
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require ('path');
@@ -18,11 +16,10 @@ app.use(express.static(pathPublicDirectory));
 
 app.get("/", function(req, res){
   // 
-  res.render ('pedigree');
+  res.render ('test');
 });
 
 app.listen(port, function(){
   console.log(`Server listening on port: ${ port}`);
-  console.log('Server listening on port: ' + port);
-  console.log("Server listening on port: " + port);
+  
 });
