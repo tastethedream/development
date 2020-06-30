@@ -21,10 +21,7 @@ img{
 }
 
  /* header .title{
-    font-family: Montserrat;
-    font-weight: bold;
-    color: var(--latte);
-    font-size: 20px;
+    
     text-align: right; 
 } 
 
@@ -41,6 +38,7 @@ img{
      color: var(--latte);
      text-decoration: none;
      text-transform: uppercase;
+     font-family: Montserrat;
  } 
 
  nav ul{
@@ -48,7 +46,7 @@ img{
      padding: 0px;
      margin: 0px;
      display: inline-flex;
-     vertical-align: top;
+     vertical-align: middle;
      list-style-type: none;
   
     
@@ -57,7 +55,7 @@ img{
 
  nav li{
       cursor: pointer;
-      padding: 3.5rem;
+      padding: 3rem;
       color: var(--latte);
 }
 
@@ -67,6 +65,8 @@ img{
     color: var(--latte);
     text-decoration: none;
      text-transform: uppercase; 
+     font-family: Montserrat;
+    
 
 }
   header .current a{
@@ -79,6 +79,62 @@ img{
      color: var(--cappuccino);
      font-weight: bold;
  }
+
+ /* Home Page */ 
+
+ #home-page{
+     background-color: var(--latte);
+     padding-bottom: 30px;
+     
+ }
+
+ .home-title{
+    font-family: Montserrat;
+    font-weight: bold;
+    color: var(--slatedark);
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0; 
+    padding-top: 40px;
+    
+    line-height: 1.5;
+ }
+
+ .home-subtitle{
+    font-family: Montserrat;
+    font-weight: bold;
+    color: var(--slatedark);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+    line-height: 1.5;
+ }
+
+ .image-container{
+    text-align: center;
+ }
+
+ .dog-walk-image{
+     border-radius: 50%;
+     
+ }
+
+
+ /* footer */
+
+ #footer{
+     text-align: center;
+     font-family: Montserrat;
+     font-size: 12px;
+     font-weight: bold;
+     color: var(--latte);
+     background-color: var(--slatelight);
+     border-top: var(--slatedark) 3px solid;
+ }
+/* 
 
  
    /* media queries  */
