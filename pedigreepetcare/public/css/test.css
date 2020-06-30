@@ -1,67 +1,107 @@
+:root{
+    --slatelight: #567582;
+    --slatedark: #464D5C;
+    --latte: #F7DDA4;
+    --cappuccino: #B89068;
+    font-size: 16px;
+}
+
+
 header{
-    background:wheat;
-    color: white;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: cornflowerblue 3px solid ;
+    background: var(--slatelight);
+    min-height: 50px;
+    border-bottom: var(--slatedark) 3px solid ;
+    display: flex;
 
 }
+
 img{
-    border-radius: 50%;
     margin-left: 25px;
+    margin-top: 0;
 }
 
+ /* header .title{
+    font-family: Montserrat;
+    font-weight: bold;
+    color: var(--latte);
+    font-size: 20px;
+    text-align: right; 
+} 
+
+.maintitle{
+    font-size: 36px;
+}
+
+.subtitle{
+    font-size: 20px;  */
+}
  /* style the <a> links in the header*/
- header a{
-     color:white;
+
+  nav a{
+     color: var(--latte);
      text-decoration: none;
      text-transform: uppercase;
-     font-size: 16px;
+ } 
 
- }
-/* by default ul have padding and margins so set to 0*/
-
-
- header li{
-     display: inline;
-     padding: 0 20px 0 20px;
-  
- }
-
- header #logo{
-     float: left;
-  
- }
-
- 
- 
-
- header nav{
-     /* float:center; */
-     margin-bottom: 10px;
- }
-
-  header .current a{
-     color: cornflowerblue;
-     font-weight: bold;
- }
-
- header .title{
-    font-family: Montserrat;
-    color: white;
-     font-size: 20px;
-     float:right;
-     margin-right: 60px;
- }
-
- 
- /* hover state */
-
- header a:hover{
-     color: #cccccc;
-     font-weight: bold;
- }
-
- 
+ nav ul{
     
+     padding: 0px;
+     margin: 0px;
+     display: inline-flex;
+     vertical-align: top;
+     list-style-type: none;
+  
+    
+
  }
+
+ nav li{
+      cursor: pointer;
+      padding: 3.5rem;
+      color: var(--latte);
+}
+
+
+/* the current page on the navbar */
+ header a{
+    color: var(--latte);
+    text-decoration: none;
+     text-transform: uppercase; 
+
+}
+  header .current a{
+     color: var(--cappuccino);
+     font-weight: bold;
+ }
+
+ /* hover state */
+ header a:hover{
+     color: var(--cappuccino);
+     font-weight: bold;
+ }
+
+ 
+   /* media queries  */
+ 
+@media all and (max-width: 700px){
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav li{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
