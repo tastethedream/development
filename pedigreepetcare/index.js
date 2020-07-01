@@ -21,6 +21,8 @@ app.get("/", function(req, res){
   res.render ('pedigree');
 });
 
+
+
 app.listen(port, function(){
   console.log(`Server listening on port: ${ port}`);
   console.log('Server listening on port: ' + port);
