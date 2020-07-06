@@ -1,7 +1,7 @@
 :root{
     --slatelight: #567582;
     --slatedark: #464D5C;
-    --latte: #F7DDA4;
+    --latte: #F1e3cb;
     --cappuccino: #B89068;
     font-size: 16px;
 }
@@ -12,70 +12,45 @@ header{
     min-height: 50px;
     border-bottom: var(--slatedark) 3px solid ;
     display: flex;
-    
-
 }
 
 img{
     margin-left: 25px;
     margin-top: 0;
-   
-}
-
- /* header .title{
-    
-    text-align: right; 
-} 
-
-.maintitle{
-    font-size: 36px;
-}
-
-.subtitle{
-    font-size: 20px;  */
-}
- /* style the <a> links in the header*/
+ }
 
   nav a{
      color: var(--latte);
      text-decoration: none;
      text-transform: uppercase;
-     font-family: Montserrat;
+     font-family: Montserrat; 
  } 
 
  nav ul{
-    
      padding: 0px;
      margin: 0px;
      display: inline-flex;
      vertical-align: middle;
-     list-style-type: none;
-   
-  
-    
-
+     list-style-type: none; 
  }
 
  nav li{
       cursor: pointer;
-      padding: 3rem;
+      padding: 2rem;
       color: var(--latte);
+      font-size: 12px;
+      font-weight: bolder;
 }
 
 
-/* the current page on the navbar */
+
  header a{
     color: var(--latte);
     text-decoration: none;
      text-transform: uppercase; 
      font-family: Montserrat;
-    
-
 }
-  header .current a{
-     color: var(--cappuccino);
-     font-weight: bold;
- }
+  
 
  /* hover state */
  header a:hover{
@@ -91,20 +66,18 @@ img{
 
  #home-page{
      background-color: var(--latte);
-     padding-bottom: 30px;
-     
+     padding-bottom: 30px;  
  }
 
  .home-title{
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: bolder;
     color: var(--slatedark);
     font-size: 36px;
     text-align: center;
     margin-top: 0;
     margin-bottom: 0; 
     padding-top: 40px;
-    
     line-height: 1.5;
  }
 
@@ -126,22 +99,100 @@ img{
 
  .dog-walk-image{
      border-radius: 50%;
-     
+}
+
+ /* about us */
+
+ .aboutustext{
+     margin-top: 0;
+     margin-bottom: 0;
+     background-color: var(--latte);
  }
+
+ .about-title{
+    font-family: Montserrat;
+    font-weight: bold;
+    color: var(--slatedark);
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 1.5;
+ }
+
+ .about-subtitle{
+    font-family: Montserrat;
+    font-weight: bold;
+    color: var(--slatedark);
+    font-size: 20px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    line-height: 1.5;
+ }
+
+ .about-para{
+    font-family: Montserrat;
+    color: var(--slatedark);
+    font-size: 16px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-bottom:15px;
+    line-height: 1.5;
+}
 
 
  /* footer */
 
- #footer{
-     text-align: center;
-     font-family: Montserrat;
-     font-size: 12px;
-     font-weight: bold;
+ footer{
+     
      color: var(--latte);
      background-color: var(--slatelight);
      border-top: var(--slatedark) 3px solid;
+     display: flex;
+     justify-content: space-between;
+}
+
+ .copyright{
+     font-family: montserrat;
+     font-size: 16px;
+     font-weight: bold;
+     padding-top: 30px;
+     margin-left: 15px;
  }
-/* 
+
+ .design{
+    font-family: montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-right: 15px;
+}
+
+  .socials li{
+    display: inline-block;
+    font-size: 40px;
+    padding : 20px;
+   list-style: none;
+ }
+
+ .socials li a{
+     color: var(--latte);
+     text-decoration: none;
+     transition: all 0.5s ease;
+     cursor: pointer;
+ }
+
+ .socials li a:hover{
+    color: var(--cappuccino);
+}
+
+
+
 
  
    /* media queries  */

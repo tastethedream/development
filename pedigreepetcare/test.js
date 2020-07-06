@@ -49,6 +49,11 @@ app.get("/contact", function(req, res){
   res.render ('contact');
 });
 
+app.get("/terms", function(req, res){
+  
+  res.render ('terms');
+});
+
 app.get("/home", function(req, res){
 
   res.render ('test');
