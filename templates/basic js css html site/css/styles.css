@@ -8,11 +8,7 @@
 
 /* targets the whole page an overides any preset styling */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-shadow: border-box;
-}
+
 
 /* style the html*/
 
