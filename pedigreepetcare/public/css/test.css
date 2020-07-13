@@ -5,6 +5,12 @@
     --cappuccino: #d8cbbb;
     font-size: 16px;
 }
+body{
+    font-family: montserrat;
+    font-size: 16px;
+    color: var(--slatedark);
+    background: var(--cappuccino);
+}
 
 
 
@@ -13,7 +19,7 @@ header{
     min-height: 50px;
     border-bottom: var(--slatedark) 3px solid ;
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
 }
@@ -125,7 +131,7 @@ img{
     color: var(--slatedark);
     font-size: 56px;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 20px;
     margin-bottom: 0; 
     padding-top: 40px;
     padding-bottom: 40px;
@@ -300,6 +306,7 @@ img{
    color: var(--slatedark);
    font-family: montserrat;
    font-size: 15px;
+   
 
 }
 
@@ -336,6 +343,64 @@ img{
     /* position: relative;
     width: 40%;
 } */ 
+
+/* our services */
+
+#our-services h1{
+    font-family: Montserrat;
+    font-weight: bold;
+    color: var(--slatedark);
+    font-size: 56px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.service-container{
+    width: 100%;
+    height: auto;
+      /* flex box style */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    /* overflow: hidden; */
+    
+}
+
+.service-box{
+    width: 40%;
+    height: auto;
+    margin: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 1.5;
+    background: var(--latte);
+    padding: 20px;
+    overflow-x: auto;
+  
+    
+}
+
+.service-box h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+.service-box td{
+    padding: 10px;
+}
+
+.walk-img{
+    margin-top: 80px;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
 
  /* footer */
 
@@ -397,15 +462,30 @@ img{
         text-align: center;
     }
 
-    .boxone{
+    /* .boxone{
         flex-direction: column;
-    }
+    } */
+    .service-box{
+        width: 90%;
+      }
 }
 
 
+@media screen and (max-width: 1200px){
 
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
 
-
+    
+    .service-box{
+      width: 30%;
+    }
+   
+    
+  }
+  
+  
 
 
 
