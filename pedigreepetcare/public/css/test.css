@@ -314,6 +314,96 @@ img{
     background: var(--cappuccino);
 }
 
+/* contact us */
+
+.formcontainer{
+    max-width:800px;
+    height: 600px;
+    background: var(--latte);
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 40px;
+    box-shadow:  0 0 20px rgba(72,98,85,0.6);
+
+}
+
+.formcontainer h1{
+    font-family: Montserrat;
+    font-weight: bold;
+    color: var(--slatedark);
+    font-size: 56px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.input, .message .textarea{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border: 2px solid var(--slatedark);
+    font-size: 14px;
+    border-radius: 4px;
+    color: var(--slatedark);
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+.login .input{
+    width: 48%;
+    float: left;
+    margin-right: 4%
+}
+
+.login .input:last-child{
+    margin-right: 0;
+}
+
+.message .area{
+    height: 200px;
+}
+
+.textarea:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.5);
+    transition: 0.3s ease;
+}
+
+.input:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.5);
+    transition: 0.3s ease;
+}
+
+.btn{
+    width: 250px;
+    background: var(--cappuccino);
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: var(--slatedark) ;
+    text-transform: uppercase;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 4%;
+}
+
+.btn:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.5);
+    transition: 0.3s ease;
+}
+
+.input:focus,
+.msg .area:focus{
+    border: 2px solid var(--slatedark);
+}
+
+::-webkit-input-placeholder{
+    font-family: montserrat;
+}
+
  /* footer */
 
  footer{
