@@ -14,21 +14,31 @@
 <body>
     {{>header}} 
 
-    <div class="formcontainer">
+   <form class="formcontainer" action="MAILTO:tastethedream@gmail.com?subject=Enquiry" method="post" enctype="text/plain" subject="Enquiry">
       <h1>Contact Us</h1>
       <div class="login">
-        <input type="text" class="input" placeholder="Name">
-        <input type="text" class="input" placeholder="Email">
+        <input type="text" class="input" placeholder="Name" name="name">
+        <input type="email" class="input" placeholder="Email" name="email">
       </div>
       <div class="subject">
-        <input type="text" class="input" placeholder="Subject">
+        <input type="text" class="input" placeholder="Subject" name="subject">
       </div>
       <div class="message">
-        <textarea class="textarea" placeholder="Your Message"></textarea>
+        <textarea class="textarea" placeholder="Your Message" name="message"></textarea>
       </div>
-      <div class="btn">Send Message</div>
-    </div>
+      <div class="btn-submit">
+        <input type= "submit" value="Submit" id="btn">
+        </div>
+        <div class="btn-reset">
+          <input type= "reset" value="Reset" id="btn">
+        </div>
+
+
+
+    </form>
     
+
+   
 
 
 

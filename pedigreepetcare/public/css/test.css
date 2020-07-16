@@ -377,7 +377,7 @@ img{
     transition: 0.3s ease;
 }
 
-.btn{
+.btn-submit{
     width: 250px;
     background: var(--cappuccino);
     height: 50px;
@@ -388,12 +388,45 @@ img{
     margin: 0 auto;
     cursor: pointer;
     border-radius: 4%;
+    float: left;
+    margin-right: 4%;
+   
 }
 
-.btn:hover{
+.btn-reset{
+    width: 250px;
+    background: var(--cappuccino);
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: var(--slatedark) ;
+    text-transform: uppercase;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 4%;
+    margin-right: 0;
+}
+
+ .btn-reset:hover{
     box-shadow: 0 15px 30px rgba(0,0,0,.5);
     transition: 0.3s ease;
 }
+
+.btn-submit:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.5);
+    transition: 0.3s ease;
+}
+
+#btn{
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: var(--slatedark);
+    font-family: montserrat;
+    font-weight: bold;
+
+}
+
 
 .input:focus,
 .msg .area:focus{
