@@ -22,6 +22,9 @@ app.set('views', pathViews);
 hbs.registerPartials(pathPartials);
 
 
+
+
+
 app.get("/", function(req, res){
   
   res.render ('test');

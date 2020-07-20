@@ -391,7 +391,7 @@ img{
     float: left;
     margin-right: 4%;
    
-}
+} 
 
 .btn-reset{
     width: 250px;
@@ -405,7 +405,7 @@ img{
     cursor: pointer;
     border-radius: 4%;
     margin-right: 0;
-}
+} 
 
  .btn-reset:hover{
     box-shadow: 0 15px 30px rgba(0,0,0,.5);
@@ -424,7 +424,10 @@ img{
     color: var(--slatedark);
     font-family: montserrat;
     font-weight: bold;
-
+    
+}
+#btn:last-child{
+    margin-right: 0;
 }
 
 
@@ -437,13 +440,115 @@ img{
     font-family: montserrat;
 }
 
+/* Testimonials Carousel */
+
+.carousel{
+    position: relative;
+    height: 600px;
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+.carousel__track-container{
+    background: var(--latte);
+    overflow: hidden;
+    height: 75%;
+    position: relative;
+   
+}
+
+.carousel__track{
+    padding:0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: 250ms ease-in;
+}
+
+.carousel__slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+   
+}
+
+.slide1{
+    background-image: url(image/carousel1.jpeg);
+    background: red;
+}
+
+.slide2{
+    background-image: url(image/carousel1.jpeg);
+}
+
+
+.slide3{
+    background-image: url(image/carousel1.jpeg);
+}
+
+
+.slide4{
+    background-image: url(image/carousel1.jpeg);
+}
+
+
+.slide5{
+    background-image: url(image/carousel1.jpeg);
+}
+
+.carousel-btn{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 45px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel__btn--left{
+    left: -40px;
+}
+
+.carousel__btn--right{
+    right: -40px;
+}
+
+.carousel__nav{
+  
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__indicator{
+    border:0;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: var(--slatelight);
+    margin: 0 10px;
+
+
+}
+
+.carousel__indicator.current-slide{
+
+        background: var(--slatedark);
+
+}
+
+
  /* footer */
 
  footer{
 
     margin: 0;
     padding: 0;
-     /* position: fixed; */
+    height: 100px;
      color: var(--latte);
      background-color: var(--slatelight);
      border-top: var(--slatedark) 3px solid;
