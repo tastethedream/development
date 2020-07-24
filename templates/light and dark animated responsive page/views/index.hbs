@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Engine</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/429ff7fb53.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
+</head>
+<body >
+
+    {{!-- navigation and logo --}}
+
+<header>
+ <div class="container">
+     <nav class="nav">
+         <div class="menu-toggle">
+             <i class="fas fa-bars"></i>
+              <i class="fas fa-times"></i>
+         </div>
+         <a href"index.hbs" class="logo"> <img src="images/logo.png" alt="logo"></a>
+         <ul class="nav-list">
+             <li class="nav-item">
+                 <a href="/" class="nav-link active">Home</a>
+             </li>
+             <li class="nav-item">
+                 <a href="#" class="nav-link">Menu</a>
+             </li>
+             <li class="nav-item">
+                 <a href="#" class="nav-link">Categories</a>
+             </li>
+             <li class="nav-item">
+                 <a href="#" class="nav-link">Trending</a>
+             </li>
+         </ul>
+     </nav>
+ </div>
+</header>
+
+<section class="hero" id="hero">
+<div class="container">
+    <h2 class="sub-headline">
+        <span class="first-letter">W</span>elcome
+    </h2>
+    <h1 class="headline">Google Labs</h1>
+    <div class="headline-description">
+        <div class="seperator">
+            <div class="line line-left"></div>
+            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+              <div class="line line-right"></div>
+        </div>
+
+        <div class="single-animation">
+            <h5>Ready to explore?</h5>
+            <a href="#" class="btn cta-btn">Explore</a>
+
+        </div>
+    </div>
+</div>
+
+</section>
+{{!-- 
+hero section ends here --}}
+
+<section class="discover">
+    <div class="container">
+        <div class="discover-info">
+{{!-- 
+            classes defined to use with scrolling animation --}}
+            <div class="discover-description padding-right animate-left">
+                <div class="global-headline">
+                    <h2 class="sub-headline">
+        <span class="first-letter">D</span>iscover
+    </h2>
+     <h1 class="headline headline-dark">Your potential</h1>
+      <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                </div>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <a href="" class="btn body-btn">Our Story</a>
+            </div>
+            <div class="discover-info-img animate-right">
+                <img src="/images/studylight.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+{{!-- discover section ends here --}}
+
+<section class="catergories between">
+    <div class="container">
+                   <div class="global-headline">
+                       <div class="animate-top">
+                           <h2 class="sub-headline">
+                            <span class="first-letter">C</span>hoose
+                            </h2>
+                       </div>
+                    <div class="animate-bottom"></div>
+                        <h1 class="headline">Your category</h1>
+                    </div>
+    </div>
+ </div>
+
+
+</section>
+
+ {{!-- catergories section ends here --}}
+
+ <section class="recommended-for-you">
+     <div class="container">
+         <div class="discover-info">
+             <div class="image-group padding-right animate-left">
+                 <img src="/images/option1.jpeg" alt="">
+                 <img src="/images/option2.jpeg" alt="">
+                 <img src="/images/option3.jpeg" alt="">
+                 <img src="/images/option4.jpeg" alt="">
+         </div>
+         <div class="discover-description animate-right">
+<div class="global-headline">
+                    <h2 class="sub-headline">
+        <span class="first-letter">R</span>ecommended
+    </h2>
+     <h1 class="headline headline-dark">For You</h1>
+      <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, incidunt voluptatem numquam dolorum amet adipisci, harum ut fugit esse voluptatibus, quaerat cumque veniam. Ut voluptates nam placeat, facere repellat magnam?</p>
+                <a href="" class="btn body-btn">View all the labs in this category</a>
+
+         </div>
+     </div>
+ </section>
+{{!-- 
+ recommended section ends here --}}
+
+
+<section class="trending-now between">
+    <div class="container">
+                   <div class="global-headline">
+                       <div class="animate-top">
+                           <h2 class="sub-headline">
+                            <span class="first-letter">T</span>rending
+                            </h2>
+                       </div>
+                    <div class="animate-bottom"></div>
+                        <h1 class="headline">Now</h1>
+                    </div>
+    </div>
+ </div>
+
+
+</section>
+{{!-- 
+ trending now section ends here --}}
+<section class="stay-current">
+    <div class="container">
+        <div class="discover-info">
+{{!-- 
+            classes defined to use with scrolling animation --}}
+            <div class="discover-description padding-right animate-left">
+                <div class="global-headline">
+                    <h2 class="sub-headline">
+        <span class="first-letter">S</span>tay
+    </h2>
+     <h1 class="headline headline-dark">current</h1>
+      <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                </div>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non?</p>
+                <a href="" class="btn body-btn">Contact Us</a>
+            </div>
+            <div class="image-group">
+                <img class="animate-top" src="/images/google.jpeg" alt="">
+                  <img class="animate-bottom" src="/images/github.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+{{!-- 
+stay-current section ends --}}
+
+<footer>
+    <div class="container">
+        <div class="back-to-top">
+            <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="footer-content">
+            <div class="footer-content-about amimate-top">
+                    <h4>About Google Labs</h4>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus reprehenderit recusandae reiciendis debitis natus facilis sunt officia error quaerat hic quam ab necessitatibus eos tempora nobis repudiandae, tenetur, numquam cumque?</p>
+            </div>
+ 
+        <div class="footer-content-divider animate-bottom">
+            <div class="social-media">
+                <h4>Follow us</h4>
+                <ul class="social-icons">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="newsletter-container">
+                <h4>Newsletter</h4>
+                <form action="" class="newsletter-form">
+                    <input type="text" class="newsletter-input" placeholder="Your email">
+                    <button class="newsletter-btn" type="submit">
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                </form>
+            </div>
+        </div> 
+    </div>
+</div>
+</footer>
+
+
+      <script type ="text/javascript" src="/scripts/app.js"></script  
+</body>
+</html>
